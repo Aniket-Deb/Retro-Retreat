@@ -14,6 +14,17 @@ nav{
     width: 135px;
     cursor: pointer;
 }
+button{
+    font-size:1.1rem;
+    padding:5px 10px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    background: #1C7579;
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
 .search-bar {
     background: #fff;
     width: 70%;

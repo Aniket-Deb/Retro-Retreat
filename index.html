@@ -3,149 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro | Retreat</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <script type="module" src="JS/firebaseauth.js"></script>
 </head>
 <body>
-    <div class="header">
+
+  <div class="header">
     <nav>
         <img src="./images/Retro Retreat logo.png" alt="logo" class="logo">
     </nav>
+    <!--<nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>-->
+  </div>
+
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Register</h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text"  id="fName" placeholder="First Name" required>
+           <label for="fname">First Name</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text"  id="lName" placeholder="Last Name" required>
+            <label for="lName">Last Name</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email"  id="rEmail" placeholder="Email" required>
+            <label for="rEmail">Email</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="rPassword"  placeholder="Password" required>
+            <label for="rPassword">Password</label>
+        </div>
+       <button class="btn" id="submitSignUp" >Sign Up</button>
+      </form>
+      <p class="or">
+        ----------or--------
+      </p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="links">
+        <p>Already Have Account ?</p>
+        <button id="signInButton">Sign In</button>
+      </div>
     </div>
-    <div class="search-bar">
-        <form>
-            <div class="location-input">
-                <label>Where</label>
-                <input type="text" placeholder="Search destinations">
-            </div>
-            <div>
-                <label>Check in</label>
-                <input type="text" placeholder="Add dates">
-            </div>
-            <div>
-                <label>Check out</label>
-                <input type="text" placeholder="Add dates">
-            </div>
-            <div>
-                <label>Who</label>
-                <input type="text" placeholder="Add Guest">
-            </div>
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+  <div class="container" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Password" required>
+              <label for="password">Password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+         <button  class="btn"  id="submitSignIn">Sign In</button>
         </form>
-    </div>
-
-    <h1 class="text">The Way 
-        <br>You Want To Live...</h1>
-
-    <div class="stay">
-        <div style="text-align: center;"><a href="#"><button class="btn">Remote Stay</button></a><img src="./images/Remote Stay.png" alt="Remote Stay"></div>
-        <div style="text-align: center;"><a href="#"><button class="btn">Vintage Stay</button></a><img src="./images/Vintage Stay.png" alt="Vintage Stay"></div>
-        <div style="text-align: center;"><a href="#"><button class="btn">Experience Stay</button></a><img src="./images/Experience Stay.png" alt="Experience Stay"></div>
-    </div>
-
-    <div class="reacomm">
-        <a href="#"><button class="btn">Top Recommendations</button></a>
-    </div>
-
-    <div class="reacomm-img">
-        <div>
-            <img src="./images/Recomm1.png">
+        <p class="or">
+          ----------or--------
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
         </div>
-        <div>
-            <img src="./images/Recomm2.png">
+        <div class="links">
+          <p>Don't have account yet?</p>
+          <button id="signUpButton">Sign Up</button>
         </div>
-        <div>
-            <img src="./images/Recomm3.png">
-        </div>
-        <div>
-            <img src="./images/Recomm4.png">
-        </div>
-        <div>
-            <img src="./images/Recomm5.png">
-        </div>
-        <div>
-            <img src="./images/Recomm3.png">
-        </div>
-        <div>
-            <img src="./images/Recomm2.png">
-        </div>
-    </div>
-
-    <div class="stay-img">
-        <div>
-            <img src="./images/OrchidFarmstay1.png"><p style="font-family: math;">The OrchidFarm stay in
-                 <br>Kurseong only at ₹1500/- Night</p>
-        </div>
-        <div>
-            <img src="./images/OrchidFarmstay2.png"><p style="font-family: math;">The OrchidFarm stay in
-                 <br>Kurseong only at ₹1500/- Night</p>
-        </div>
-        <div>
-            <img src="./images/OrchidFarmstay3.png"><p style="font-family: math;">The OrchidFarm stay in
-                 <br>Kurseong only at ₹1500/- Night</p>
-        </div>
-    </div>
-
-    <div class="prope">
-        <a href="#"><button class="btn">Top Rated Properties</button></a>
-    </div>
-    
-    <div class="prope-img">
-        <div>
-            <img src="./images/Properties1.png"><p style="font-family: math;">Top rated property</p>
-        </div>
-        <div>
-            <img src="./images/Properties2.png"><p style="font-family: math;">Top rated property</p>
-        </div>
-        <div>
-            <img src="./images/Properties3.png"><p style="font-family: math;">Top rated property</p>
-        </div>
-    </div>
-    <div class="prope-img2">
-        <div>
-            <img src="./images/Properties4.png"><p style="font-family: math;">Top rated property</p>
-        </div>
-        <div>
-            <img src="./images/Properties5.png"><p style="font-family: math;">Top rated property</p>
-        </div>
-        <div>
-            <img src="./images/Properties6.png"><p style="font-family: math;">Top rated property</p>
-        </div>
-    </div>
-
-    <div class="show">
-        <a href="#"><button class="btn">Show more...</button></a>
-    </div>
-
-    <h1 class="text">Contribute a villager to 
-        <br>renovate their homes</h1>
-    
-    <div class="contribute">
-        <a href="#"><button class="btn">Contribute Now</button></a>
-    </div>
-
-    <footer>
-    <div class="footer">
-        <div class="about">
-        <h1>About Us</h1>
-        <p>ZimCore Tech Meet is an annual event where coders, 
-        <br>developers, and web professionals meet casually to discuss 
-        <br>and celebrate the most exciting developments in the tech industry.</p></div>
-
-        <div class="sci">
-            <div class="right-side">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i></div>
-            <div class="left-side"><p>Terms & Conditions</p></div> 
-        </div>
-    </div>
-    </footer>
-
-<!--Linking JavaScript-->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="/JS/scrpit.js"></script>
-    
+      </div>
+      <script src="JS/scrpit.js"></script>
 </body>
 </html>
