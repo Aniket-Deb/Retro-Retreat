@@ -98,7 +98,8 @@ button{
     font-family: sans-serif;
 }
 .stay img{
-    margin-top: 30px;
+    display: flex;
+    margin-left: 66px;
     width: 75px;
 }
 .reacomm {
