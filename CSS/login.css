@@ -204,3 +204,55 @@ button:hover{
     opacity:0;
     animation:fadeOut 7s forwards;
 }
+@media screen and (max-width: 500px) {
+    .logo{
+        width: 100px;
+    }
+    .container{
+        width: 90%;
+    }
+    .form-title{
+        text-align: center;        
+        font-size: 15px;
+    }
+    form{
+        text-align: center;
+        margin: 0 2rem;
+    }
+    .input-group{
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .recover{
+        text-align: center;
+    }
+    .recover a{
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    button{
+        font-size: 10px;
+        text-align: center;
+        width: 30%;
+        font-weight: bold;
+    }
+    .or {
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .icons{
+        text-align: center;
+    }
+    .links{
+        text-align: center;
+        display: inherit;
+        font-size: 10px;
+        margin-top: 0.9rem;
+    }
+    #signUpButton, #signInButton {
+        font-size: 13px;
+    }
+}
