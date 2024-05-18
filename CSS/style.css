@@ -278,8 +278,8 @@ footer{
         justify-content: center;
         display: flex;
         background: #fff;
-        padding: 6px 10px 6px 30px;
-        border-radius: 50px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 20px;
         align-items: center;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
@@ -287,6 +287,23 @@ footer{
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .search-bar form div {
+        padding: 3px;
+        margin-top: 10px;
+    }
+    .search-bar form label{
+        font-size: small;
+        font-weight: 600;
+        font-family: math;
+    }
+    .search-bar form input {
+        padding-top: 5px;
+        font-size: small;
+        display: block;
+        border: 0;
+        outline: none;
+        background: transparent;
     }
     .search-bar form button {
         margin-top: 15px;
@@ -300,9 +317,9 @@ footer{
         font-size: large;
     }
     .stay{
+        padding: 0px;
         display: flex;
-        justify-content: center;
-        font-size: small;
+        justify-content: space-evenly;
     }
     .stay .btn{
         color: #fff;
@@ -311,13 +328,14 @@ footer{
         margin-top: 30px;
         padding: 5px 10px;
         border: none;
-        border-radius: 51px;
+        border-radius: 50px;
         cursor: pointer;
         font-size: 12px;
-        font-family: sans-serif
+        font-family: sans-serif;
     }
     .stay img{
         width: 45px;
+        margin: auto;
     }
     .reacomm .btn {
         font-weight: 100;
@@ -351,10 +369,12 @@ footer{
         border-radius: 5%;
     }
     .stay-img {
-        display: ruby-text;
+        font-weight: 100;
         margin-top: 35px;
         font-size: 15px;
         text-align: start;
+        display: grid;
+        justify-content: center;
     }
     .prope .btn{
         font-weight: 100;
